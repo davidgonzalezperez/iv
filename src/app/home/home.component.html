@@ -1,0 +1,27 @@
+<div class="container" style="text-align: center;">
+    <h1>Usuarios dados de alta</h1>
+
+    
+    <br>
+    <table style="width:100%">
+        <tr>
+          <th>Nombre</th>
+          <th>Apellidos</th> 
+        </tr>
+        </table> 
+
+        <div *ngFor="let user of users | async" >
+            <table style="width:100%">
+            <tr >
+              <td>{{ user.nombre }}</td >    
+              <td>{{ user.apellidos }}</td> 
+              
+            </tr>
+        </table>
+        
+        </div>
+   
+             
+     
+
+        
